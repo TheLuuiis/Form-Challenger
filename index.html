@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/index.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Container Success -->
+    <div class="success">
+      <div class="tittle">
+        <img src="./assets/images/icon-success-check.svg" alt="success">
+        <h1>Message Sent!</h1>
+      </div>
+      <div class="description-success">
+        <p>
+          Thanks for completing the form. We'll be in touch soon!
+        </p>
+      </div>
+    </div>
+
+    <!-- Container form -->
+    <div class="container-form">
+      <form action="#" id="form">
+        <h1>Contact Us</h1>
+        <div class="names">
+          <div class="name">
+            <label for="Firt Name">First Name *</label>
+            <input type="text" name="first name" id="name">
+            <span id="nameErrror" class="error"></span>
+          </div>
+          <div class="name">
+            <label for="Firt Name">Last Name *</label>
+            <input type="text" id="lastName" name="last name">
+            <span id="lastNameError" class="error"></span>
+          </div>
+        </div>
+        <div class="email">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email">
+          <span id="emailError" class="error"></span>
+        </div>
+        <div class="querys">
+          <div class="type">
+            <label for="enquiry">Query Type *</label>
+            <div class="enquiry">
+              <input type="radio" class="query" placeholder="General Enquiry">
+              <label for="General">General Enquiry</label>
+            </div>
+          </div>
+          <div class="type-support">
+            <input type="radio" class="query" placeholder="General Enquiry">
+            <label for="Support">Support Request</label>
+          </div>
+        </div>
+        <div class="message">
+          <label for="message">Message</label>
+          <textarea id="textTarea" name="message" id="message" rows="4"></textarea>
+          <span id="textTareaError" class="error"></span>
+        </div>
+        <div class="checkbox">
+          <input id="checkbox" type="checkbox" value="checkbox">
+          <label for="checkbox">I consent to being contacted by the team *</label>
+        </div>
+        <button id="button" type="submit">Submit</button>
+      </form>
+    </div>
+
+  </body>
+</html>
